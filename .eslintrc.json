@@ -16,6 +16,8 @@
     "rules": {
         "no-debugger": "off",
         "no-console": 0,
-        "class-methods-use-this": "off"
+        "class-methods-use-this": "off",
+        "semi": "off",
+        "@typescript-eslint/semi": "error"
     }
 }
