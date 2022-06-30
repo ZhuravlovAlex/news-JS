@@ -33,3 +33,28 @@ footer .copyright a:hover {
 footer .copyright:before {
     content: '©';
 }
+/*-------------Footer Info---------------*/
+.footer_info {
+    border: 1px solid green;
+    background: #ffe5e5;
+    border-radius: 20px;
+}
+
+.footer_info>.container_info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_info img {
+    width: 100px;
+}
+
+.container_info {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.year {
+    font-size: x-large;
+}
