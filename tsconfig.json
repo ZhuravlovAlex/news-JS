@@ -4,12 +4,14 @@
 		"module": "commonjs",
 		"declaration": true,
 		"outDir": "./dist",
-		"alwaysStrict": true,
+		"strict": false,
 		"esModuleInterop": true,
 		"allowJs": true,
 		"sourceMap": true
 	},
-	//"extends": "./tsconfig.json",
+	"include": [
+		"src"
+	],
 	"exclude": [
 		"node_modules"
 	]
