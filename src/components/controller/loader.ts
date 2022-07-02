@@ -27,7 +27,7 @@ interface ILoader {
     load: (method: LoadMethod, endpoint: string, callback: () => void, options: RespConfigOptions) => void
 }
 
-export class Loader implements ILoader {
+export default class Loader implements ILoader {
 
     private readonly baseLink: string;
     private readonly options: LoaderOptions;
@@ -39,7 +39,7 @@ export class Loader implements ILoader {
 
     getResp(
         { endpoint, options = {} }: RespConfig,
-        callback = () => {
+        callback = (data: any) => {
             console.error('No callback for GET response');
         }
     ): void {
